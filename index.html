@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm to Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Farm to Table</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a> <span id="cart-count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="categories">
+        <div class="category">
+            <h2>Fruits</h2>
+            <div class="product" data-id="1">
+                <img src="apple.jpg" alt="Apple">
+                <h3>Apple</h3>
+                <p>$1.00</p>
+                <button onclick="addToCart(1, 'Apple', 1.00)">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="banana.jpg" alt="Banana">
+                <h3>Banana</h3>
+                <p>$0.50</p>
+                <button onclick="addToCart(2, 'Banana', 0.50)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Vegetables</h2>
+            <div class="product" data-id="3">
+                <img src="carrot.jpg" alt="Carrot">
+                <h3>Carrot</h3>
+                <p>$0.80</p>
+                <button onclick="addToCart(3, 'Carrot', 0.80)">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4">
+                <img src="broccoli.jpg" alt="Broccoli">
+                <h3>Broccoli</h3>
+                <p>$1.20</p>
+                <button onclick="addToCart(4, 'Broccoli', 1.20)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Fish</h2>
+            <div class="product" data-id="5">
+                <img src="salmon.jpg" alt="Salmon">
+                <h3>Salmon</h3>
+                <p>$5.00</p>
+                <button onclick="addToCart(5, 'Salmon', 5.00)">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6">
+                <img src="tuna.jpg" alt="Tuna">
+                <h3>Tuna</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart(6, 'Tuna', 3.50)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Farm to Table</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
